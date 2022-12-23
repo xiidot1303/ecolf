@@ -40,7 +40,7 @@ lang_dict = {
 
     "we produce organic food for your family text": [
         "Eco Life Fruits - quritilgan mevalar va yong'oqlar ishlab chiqaruvchisi va eksportchisi. Ayni paytda “Eco Life Fruits” O‘zbekistonda ushbu sohadagi yetakchi kompaniyalardan biri hisoblanadi. Nisbatan qisqa vaqt ichida kompaniya jahon bozoriga chiqish uchun barcha pozitsiyalarda jadal rivojlandi", 
-        "Компания Eco Life Fruits является производителем и экспортером сухофруктов и орехов. В настоящее время Eco Life Fruits, является одной из ведущих компаний в этом секторе в Узбекистане. За относительно небольшой период времени  компания динамично развивалась по всем позициям, чтобы войти на мировой рынок"
+        "Компания Eco Life Fruits является производителем и экспортером сухофруктов и орехов. В настоящее время Eco Life Fruits, является одной из ведущих компаний в этом секторе в Узбекистане. За относительно небольшой период времени  компания динамично развивалась по всем позициям, чтобы войти на мировой рынок",
         "Eco Life Fruits is a manufacturer and exporter of dried fruits and nuts. Currently, Eco Life Fruits is one of the leading companies in this sector in Uzbekistan. In a relatively short period of time, the company has dynamically developed in all positions in order to enter the global market", 
     ],
 
@@ -126,7 +126,7 @@ lang_dict = {
         "With recognized HACCP and ISO 9001 certificates in the field of food safety"
         ],
 
-    "products": ["Mahsulotlar", "", "Products"],
+    "products": ["Mahsulotlar", "Продукты", "Products"],
 
     "our fresh & organic products": ["Sof & organik mahsulotlar", "Наши свежие и органические продукты", "Our fresh & organic products"],
 
