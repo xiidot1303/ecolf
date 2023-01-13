@@ -29,7 +29,15 @@
             <div class="pb-5">
                 <div class="product-item position-relative bg-white d-flex flex-column text-center">
                     <img class="img-fluid mb-4" src="{% url 'get_file' product.photo %}" alt="">
-                    <h6 class="mb-3">{{ product.title }}</h6>
+                    <h6 class="mb-3">
+                        {% if request|user_lang == 0 %}
+                            {{ product.title_uz }}
+                        {% elif request|user_lang == 1 %}
+                            {{ product.title_ru }}
+                        {% else %}
+                            {{ product.title_en }}
+                        {% endif %}
+                    </h6>
                     <h5 class="text-primary mb-0">${{ product.price }}</h5>
                     <div class="btn-action d-flex justify-content-center">
                         <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
