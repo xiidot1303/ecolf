@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, re_path
 from django.contrib.auth.views import (
     LoginView, 
     LogoutView, 
@@ -23,4 +23,7 @@ urlpatterns = [
     path('', main.pages),
     path('<str:page>/', main.pages),
     path('change-lang/<int:lang>/', main.change_lang, name='change_lang'),
+
+    # files
+    re_path(r'^files/(?P<path>.*)$', main.get_file, name='get_file')
 ]
