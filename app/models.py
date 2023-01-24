@@ -29,3 +29,5 @@ class Product(models.Model):
     class Meta:
         verbose_name = 'Продукт'
         verbose_name_plural = 'Продукты'
+
+    file = models.FileField(upload_to='presentation', null=True, blank=True, verbose_name='Презентация')
