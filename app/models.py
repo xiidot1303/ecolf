@@ -12,6 +12,20 @@ class Product(models.Model):
     price = models.BigIntegerField(null=True, blank=True, verbose_name='Цена')
     photo = models.FileField(upload_to='photos/product', blank=False, verbose_name='Фото')
 
+    GRADES = [
+        ('grade_high', 'Высший'),
+        ('grade_1', 'Первый'),
+
+    ]
+    grade = models.CharField(null=True, blank=True, max_length=255, choices=GRADES, verbose_name='Сорт')
+    
+    DRYING_TYPES = [
+        ('sundried', 'Солнечная'),
+        ('shadow dried', 'Теневая'),
+    ]
+    drying_type = models.CharField(null=True, blank=True, max_length=255, choices=DRYING_TYPES, verbose_name='Тип сушки')
+    packaging = models.IntegerField(null=True, blank=True, verbose_name='Упаковка (kg)') # kg
+
     class Meta:
         verbose_name = 'Продукт'
         verbose_name_plural = 'Продукты'

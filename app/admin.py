@@ -8,7 +8,7 @@ class LanguageAdmin(admin.ModelAdmin):
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('title_uz', 'title_ru', 'title_en', 'price', 'photo')
     search_fields = ['title_uz', 'title_ru', 'title_en']
-    form = ProductForm
+    # form = ProductForm
 
 
 

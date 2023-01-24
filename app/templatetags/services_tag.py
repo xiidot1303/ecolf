@@ -5,7 +5,7 @@ register = template.Library()
 
 @register.filter()
 def string(request, text):
-    text = text.lower()
+    text = str(text).lower()
     return language_service.get_string(text, request)
 
 @register.filter()

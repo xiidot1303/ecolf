@@ -38,7 +38,22 @@
                             {{ product.title_en }}
                         {% endif %}
                     </h6>
+                    {% if product.price %}
                     <h5 class="text-primary mb-0">${{ product.price }}</h5>
+                    {% endif %}
+
+                    {% if product.grade %}
+                    <h6 class="text-dark mb-0">{{ request|string:'grade' }} — {{ request|string:product.grade }}</h6>
+                    {% endif %}
+
+                    {% if product.drying_type %}
+                    <h6 class="text-dark mb-0">{{ request|string:'drying type' }} — {{ request|string:product.drying_type }}</h6>
+                    {% endif %}
+                    
+                    {% if product.packaging %}
+                    <h6 class="text-dark mb-0">{{ request|string:'packaging — box' }} {{ request|string:product.packaging }} {{ request|string:'kg' }}</h5>
+                    {% endif %}
+
                     <div class="btn-action d-flex justify-content-center">
                         <a class="btn bg-primary py-2 px-3" href=""><i class="bi bi-cart text-white"></i></a>
                         <a class="btn bg-secondary py-2 px-3" href=""><i class="bi bi-eye text-white"></i></a>

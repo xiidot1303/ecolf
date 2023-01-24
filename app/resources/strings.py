@@ -213,6 +213,55 @@ lang_dict = {
 
     "call us": ["Telefon", "Телефон", "Call us"],
 
+    "grade": [
+        "Sort",
+        "Cорт", 
+        "Grade", 
+    ],
+
+    "drying type": [
+        "Quritish usuli",
+        "Тип сушки", 
+        "Drying type", 
+    ],
+
+    "packaging — box": [
+        "Qadoqlash — korobka",
+        "Упаковка — коробка", 
+        "Packaging — box", 
+    ],
+
+    "kg": [
+        "kg",
+        "кг", 
+        "kg", 
+    ],
+
+    "grade_high": [
+        "Yuqori",
+        "Высший", 
+        "RTU", 
+    ],
+
+    "grade_1": [
+        "Birinchi",
+        "Первый", 
+        "A", 
+    ],
+
+    "sundried": [
+        "Quyoshda",
+        "Солнечная", 
+        "Sundried", 
+    ],
+
+    "shadow dried": [
+        "Soyada",
+        "Теневая", 
+        "Shadow dried", 
+    ],
+
+
     "": ["", "", ""],
 
     "": ["", "", ""],
